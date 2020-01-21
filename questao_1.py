@@ -37,3 +37,4 @@ while bases:
             bases.append(read)
 
 print(super_string)
+input('')
