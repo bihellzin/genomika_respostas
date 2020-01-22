@@ -29,10 +29,9 @@ while bases:
                 if super_string[j:j + len(pedaco)] == pedaco:
                     qnt_caracteres_existente = len(super_string[j:j + len(pedaco)]) \
                                                + len(super_string[j + len(pedaco):])
+                                        
                     
                     
-                    print(super_string[j: j + qnt_caracteres_existente])
-                    print()
                     if super_string[j: j + qnt_caracteres_existente] == read[0: qnt_caracteres_existente]:
                         super_string += read[qnt_caracteres_existente:]
                         break
