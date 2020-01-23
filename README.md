@@ -24,10 +24,10 @@
   
   ``
   source tutorial-env/bin/activate
-  ``
+  ``  
   ``
   pip3 install Django==2.2.2
-  ``
+  ``  
   ``
   pip3 install psycopg2
   ``
