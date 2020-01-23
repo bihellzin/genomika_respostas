@@ -22,7 +22,7 @@
   pip3 install --upgrade pip
   ``
   
-  Após isso, rodar os seguintes comandos 
+  Após isso, rodar os seguintes comandos: 
   
   ``
   source tutorial-env/bin/activate
@@ -32,4 +32,10 @@
   ``  
   ``
   pip3 install psycopg2
+  ``    
+    
+  Em seguida, ir até a pasta onde está o arquivo manage.py e rodar o seguinte comando:  
+    
+  ``
+  python3 manage.py runserver
   ``
