@@ -9,3 +9,21 @@
 [**Questão 2**](https://github.com/bihellzin/genomika_respostas/blob/master/questao_2.py)
 
   Para a resolução da segunda questão também não foi feita nenhuma configuração diferente e nenhuma biblioteca foi instalada.
+  
+  
+[**Questão 3**](https://github.com/bihellzin/genomika_respostas/tree/master/tutorial-env)
+  
+  Para essa questão eu tive que instalar algumas dependências.
+  
+  ``
+  sudo apt-get install python3-venv python-dev python-pip libpq-dev
+  pip3 install --upgrade pip
+  ``
+  
+  Após isso, rodar os seguintes comandos 
+  
+  ``
+  source tutorial-env/bin/activate
+  pip3 install Django==2.2.2
+  pip3 install psycopg2
+  ``
