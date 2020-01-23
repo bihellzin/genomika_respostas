@@ -13,7 +13,7 @@
   
 [**Questão 3**](https://github.com/bihellzin/genomika_respostas/tree/master/tutorial-env)
   
-  Para essa questão eu tive que instalar algumas dependências.
+  Para essa questão eu tive que instalar algumas dependências e a versão do Python foi a 3.6.9.
   
   ``
   sudo apt-get install python3-venv python-dev python-pip libpq-dev
