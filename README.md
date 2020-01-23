@@ -17,6 +17,7 @@
   
   ``
   sudo apt-get install python3-venv python-dev python-pip libpq-dev
+    
   pip3 install --upgrade pip
   ``
   
