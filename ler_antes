@@ -1,0 +1,12 @@
+Algumas observações que eu gostaria de fazer de modo geral sobre as minhas respostas,
+principalmente em relação a questão 3.
+
+Primeiramente, enfrentei uma dificuldade que me tomou quase um dia inteiro por inexperiência mesmo, que foi o nome do banco de dados. O nome que consta no pdf é "phenodb", mas o nome da tabela é "pheno_db", porém isso não é justificativa para o que vou escrever a seguir, é somente um aviso para tomar cuidado na próxima vez.
+
+Depois de descobrir o nome da tabela de verdade, eu fui fazer o script pra rodar com o comando "python3 manage.py update_local", ele atualiza o banco de dados, mas não da maneira como foi pedido na questão. Primeiro, eu não fiz a chave primária como uma tupla, utilizei apenaso id mesmo. Segundo, eu não sobrescrevo dados já presentes na tabela local, apenas os ignoro e  escrevo dados que ainda não existem.
+
+Adianto logo que não cheguei a finalizar a tarefa 2, pois me faltou conhecimentos básicos do Django, pois apesar de ter um pouco de conhecimento eu sou muito pouco acostumado e inexperiente, muito mais do que eu pensei que fosse. Eu consegui fazer a busca da doença independente da formatação, caso queira testar, é só rodar o server de desenvolvimento e colocar "/teste/ nome_da_doença", independente da formatação, vai retornar o nome da doença como consta no banco de dados, seja "servidor_de_desenvolvimento/teste/BreasT CANcer" ou "servidor_de_desenvolvimento /teste/breast cancer".Além disso, eu não consegui redirecionar para a página que mostrava o resultado e os genes da doença.
+
+Dos requisitos desejáveis, creio que saberia apenas cadastrar usuários, caso fosse feito login, eu não saberia autenticar. Tanto o A.4 quando o A.5 eu não saberia como resolver. O A.4 eu saberia resolver se fosse um programa pra rodar em linha de comando, mas utilizando o Django eu realmente não consegui pensar numa forma de fazer.
+
+No final das contas, acho que foi uma experiência interessante pra mim, pois eu nunca se quer havia feito um script pra rodar em linha de comando a minha vida toda, eu vi que sei muito menos do que eu julgava saber e vou utilizar isso pra estudar ainda mais, coloquei em prática pela primeira numa entrevista coisas que aprendi nas cadeiras de algoritmos e estruturas de dados. E digo também que se eu tivesse mais 2 ou 3 dias para resolver a questão 3, provavelmente eu ainda nãp conseguiria fazer inteira.
