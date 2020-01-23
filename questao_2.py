@@ -22,6 +22,7 @@ class Grafo:
         self.tamanho += 1
 
     def topological_sort(self) -> list:
+        # Primeiro verifico o grau de entrada de cada vértice
         for i in self.grafo:
             for j in self.grafo[i].vertices:
                 self.grafo[j].grau_de_entrada += 1
@@ -29,12 +30,15 @@ class Grafo:
 
         fila = []
 
+        # Dentro da fila eu coloco primeiro os vértices que possuem grau de entrada igual a zero
         for i in range(self.tamanho):
             if self.grafo[i].grau_de_entrada == 0:
                 fila.append(i)
 
         resultado = []
 
+        # Após isso eu vou montando a a lista resultado com os vértices que estão na fila e possuem grau de entrada
+        # igual a zero
         while fila:
             u = fila.pop(0)
             resultado.append(u)
@@ -47,11 +51,13 @@ class Grafo:
                     fila.append(i)
 
 
+        # Apenas formatação da saída
         for i in resultado:
             if i == resultado[-1]:
                 print(i)
                 break
             print(i, end=', ')
+
         return resultado
 
 
