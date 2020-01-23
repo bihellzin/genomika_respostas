@@ -21,13 +21,14 @@ class Grafo:
         self.grafo[vertice.n] = vertice
         self.tamanho += 1
 
-    def topological_sort(self):
+    def topological_sort(self) -> list:
         for i in self.grafo:
             for j in self.grafo[i].vertices:
                 self.grafo[j].grau_de_entrada += 1
 
 
         fila = []
+
         for i in range(self.tamanho):
             if self.grafo[i].grau_de_entrada == 0:
                 fila.append(i)
